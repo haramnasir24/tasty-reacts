@@ -30,14 +30,9 @@ Tasty Reacts is designed to provide a delightful user experience with fast load 
 **npm install**
 
 # Usage
-1. Run the development server:
-**npm run dev
-**
-2. Build the project for production:
-**npm run build**
-
-3. Preview the production build:
-**npm run preview**
+1. Run the development server: **npm run dev**
+2. Build the project for production: **npm run build**
+3. Preview the production build: **npm run preview**
 
 # Technologies Used
 1. **Vite**: A next-generation front-end build tool that significantly improves the development experience.
