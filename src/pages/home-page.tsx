@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { RecipeType } from "@/types";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function HomePage() {
     const [recipes, setRecipes] = useState([]);
@@ -39,12 +39,12 @@ export default function HomePage() {
         }
     })
 
-    const handleOnClick = (e: React.ChangeEvent<HTMLInputElement>, cuisine: string) => {
+    const handleOnClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>, cuisine: string) => {
         e.preventDefault();
         setBadge(cuisine);
     }
 
-    const cuisines: Array<String> = ['All', 'Asian', 'American', 'Greek', 'Italian', 'Indian', 'Japanese',
+    const cuisines: Array<string> = ['All', 'Asian', 'American', 'Greek', 'Italian', 'Indian', 'Japanese',
         'Mediterranean', 'Mexican', 'Pakistani']
     return (
         <div className="xl:px-20 px-10">
@@ -77,7 +77,7 @@ export default function HomePage() {
                             <CardTitle className="lg:text-xl relative font-bold line-clamp-2"> {recipe.name} </CardTitle>
                         </CardContent>
 
-                        <CardFooter className="flex items-start gap-2 lg:gap-12 lg:flex-row flex-col">
+                        <CardFooter className="flex items-start gap-2 lg:gap-12 lg:flex-row flex-col px-3">
                             <div className="flex flex-col">
                                 <p className="text-md">Serves</p>
                                 <p className="text-gray-800">{recipe.servings}</p>

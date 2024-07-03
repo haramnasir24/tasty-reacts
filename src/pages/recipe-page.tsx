@@ -79,21 +79,21 @@ export default function RecipePage() {
 
             <div className="grid xl:grid-cols-2">
                 <div className="xl:px-12">
-                    <h2 className="text-5xl my-12">Ingredients</h2>
-                    <div className="flex flex-col divide-y divide-orange-800">
+                    <h2 className="xl:text-4xl lg:my-12 my-10 text-2xl">Ingredients</h2>
+                    <div className="flex flex-col divide-y divide-orange-800 ">
                         {recipe.ingredients.map((ingredient: string, idx: number) => (
-                            <div className="py-2" key={`${ingredient}-${idx}`}>
-                                <p className="text-2xl">{ingredient}</p>
+                            <div className="py:2" key={`${ingredient}-${idx}`}>
+                                <p className="text-md lg:text-2xl">{ingredient}</p>
                             </div>
                         ))}
                     </div>
                 </div>
                 <div className="xl:px-12">
-                    <h2 className="text-5xl my-12">Instructions</h2>
-                    <div className="flex flex-col">
+                    <h2 className="xl:text-4xl lg:my-12 my-10 text-2xl">Instructions</h2>
+                    <div className="flex flex-col ">
                         {recipe.instructions.map((instruction: string, idx: number) => (
                             <ul className="py-2 list-disc" key={`${instruction}-${idx}`}>
-                                <li className="text-2xl">{instruction}</li>
+                                <li className="text-md lg:text-2xl">{instruction}</li>
                             </ul>
                         ))}
                     </div>
