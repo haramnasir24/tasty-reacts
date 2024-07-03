@@ -35,7 +35,7 @@ export default function RecipePage() {
                         <p>← Back to All Recipes</p>
                     </Link>
                     <h1 className="text-2xl lg:text-4xl my-8 font-bold">{recipe.name}</h1>
-                    <div className="grid grid-cols-3 gap-14">
+                    <div className="grid grid-cols-3 gap-16">
                         <div className="flex flex-col">
                             <p className="text-md lg:text-2xl">🍽️ Serves</p>
                             <p className="text-gray-800 text-md lg:text-2xl font-bold">
@@ -56,9 +56,12 @@ export default function RecipePage() {
                         </div>
                         <div className="flex flex-col">
                             <p className="text-md lg:text-2xl">🍔 Cuisine</p>
-                            <p className="text-gray-800 text-md lg:text-2xl font-bold">
+                            {recipe.cuisine === "Mediterranean" ? <p className="text-gray-800 text-md lg:text-lg font-bold ">
                                 {recipe.cuisine}
-                            </p>
+                            </p> : <p className="text-gray-800 text-md lg:text-2xl font-bold">
+                                {recipe.cuisine}
+                            </p>}
+
                         </div>
                         <div className="flex flex-col">
                             <p className="text-md lg:text-2xl">🔥 Difficulty</p>
