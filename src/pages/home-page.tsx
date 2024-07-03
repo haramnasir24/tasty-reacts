@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { RecipeType } from "@/types";
 import { useEffect, useState } from "react";
 
 export default function HomePage() {
@@ -29,7 +30,7 @@ export default function HomePage() {
     useEffect(() => {
         const getFilteredRecipes = async () => {
             const recipes = await getAllRecipes();
-            const filteredRecipesByCuisine = recipes.filter((recipe) => recipe.cuisine === badge);
+            const filteredRecipesByCuisine = recipes.filter((recipe: RecipeType) => recipe.cuisine === badge);
             setFilteredRecipes(filteredRecipesByCuisine);
         }
 
@@ -64,9 +65,10 @@ export default function HomePage() {
 
 
             <div className="grid grid-cols- md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 lg:gap-x-10 gap-y-20 xl:pt-24 pt-12 pb-40 ">
-                {(filteredRecipes.length > 0 ? filteredRecipes : recipes).map((recipe, idx) => (
-                    <Card key={`${recipe.name}-${idx}`}
-                        className="flex flex-col bg-orange-100 hover:scale-105 ease-in duration-200 xl:min-h-[400px] fancyGradient">
+                {(filteredRecipes.length > 0 ? filteredRecipes : recipes).map((recipe: RecipeType, idx: number) => (
+
+                    <a href={`/recipes/${recipe.id}`}> <Card key={`${recipe.name}-${idx}`}
+                        className="flex flex-col bg-orange-100 hover:scale-105 ease-in duration-200 xl:min-h-[500px] bg-gradient-to-br from-pink-200 via-violet-200 to-orange-200">
                         <CardHeader>
                             <img src={recipe.image} alt={recipe.name} width={500} height={500} className="bg-cover rounded-md shadow-xl" />
                         </CardHeader>
@@ -82,18 +84,19 @@ export default function HomePage() {
                             </div>
                             <div className="flex flex-col">
                                 <p className="text-md">Prep Time</p>
-                                <p className="text-gray-800">{recipe.prepTimeMinutes} </p>
+                                <p className="text-gray-800">{recipe.prepTimeMinutes} min</p>
                             </div>
                             <div className="flex flex-col">
                                 <p className="text-md">Cook Time</p>
-                                <p className="text-gray-800">{recipe.cookTimeMinutes} </p>
+                                <p className="text-gray-800">{recipe.cookTimeMinutes} min</p>
                             </div>
                         </CardFooter>
-                    </Card>)
+                    </Card> </a>)
+
                 )}
             </div>
 
-        </div>
+        </div >
 
     )
 }
