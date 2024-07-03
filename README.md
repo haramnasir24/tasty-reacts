@@ -1,13 +1,13 @@
 # Tasty Reacts
 
-Welcome to Tasty Reacts, a modern web application built with Vite and React. This project showcases the use of cutting-edge tools and technologies to deliver a seamless and high-performance web experience.
+Welcome to Tasty Reacts, a modern web application built with Vite and React. This project showcases the use of cutting-edge tools and technologies to deliver a seamless and high-performance web experience. The application is a client-side SPA that presents a variety of recipes from different cuisines, making it easy for users to explore and find delicious dishes.
 
 # Table of Contents
-## Introduction
-## Features
-## Installation
-## Usage
-## Technologies Used
+1. Introduction
+2. Features
+3. Installation
+4. Usage
+5. Technologies Used
 
 # Introduction
 Tasty Reacts is designed to provide a delightful user experience with fast load times and smooth interactions. By leveraging Vite for development and build processes, the app ensures optimal performance and a streamlined developer experience.
@@ -72,9 +72,9 @@ A utility-first CSS framework that streamlines web development by providing a se
 
 
 ## Future Improvements:
-use React helmet for meta tags (SEO)
-deploy app on Vercel
-
+1. use React helmet for meta tags (SEO)
+2. deploy app on Vercel
+3. implement this app in a framework (NextJS) for performance 
 
 # React + TypeScript + Vite
 
