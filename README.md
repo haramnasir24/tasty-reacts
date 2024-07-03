@@ -21,32 +21,32 @@ Tasty Reacts is designed to provide a delightful user experience with fast load 
 
 # Installation
 1. Clone the repository:
-git clone https://github.com/haramnasir24/tasty-reacts.git
+**git clone https://github.com/haramnasir24/tasty-reacts.git**
 
 2. Navigate to the project directory:
-cd tasty-reacts
+**cd tasty-reacts**
 
 3. Install dependencies:
-npm install
+**npm install**
 
 # Usage
-1. Run the development server
-npm run dev
-
+1. Run the development server:
+**npm run dev
+**
 2. Build the project for production:
-npm run build
+**npm run build**
 
 3. Preview the production build:
-npm run preview
+**npm run preview**
 
 # Technologies Used
-1. Vite: A next-generation front-end build tool that significantly improves the development experience.
-2. React: A powerful JavaScript library for building user interfaces.
-3. React Router: A library for handling client-side routing in React applications.
-4. ShadCN: For importing badge, and card components
-5. TailwindCSS: A utility-first CSS framework that streamlines web development by providing a set of pre-designed utility classes
-6. CSS Modules: Scoped and modular CSS to avoid naming conflicts and ensure maintainability.
-7. ESLint: A tool for identifying and fixing linting issues in JavaScript code.
+1. **Vite**: A next-generation front-end build tool that significantly improves the development experience.
+2. **React**: A powerful JavaScript library for building user interfaces.
+3. **React Router**: A library for handling client-side routing in React applications.
+4. **ShadCN**: For importing badge, and card components
+5. **TailwindCSS**: A utility-first CSS framework that streamlines web development by providing a set of pre-designed utility classes
+6. **CSS Modules**: Scoped and modular CSS to avoid naming conflicts and ensure maintainability.
+7. **ESLint**: A tool for identifying and fixing linting issues in JavaScript code.
 
 ## Future Improvements:
 1. use React helmet for meta tags (SEO)
