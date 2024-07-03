@@ -24,7 +24,7 @@ export default function RecipePage() {
     }, [recipeId]);
 
     if (!recipe) {
-        return <p>Recipe is being cooked...</p>;
+        return <p className='px-3 py-3'>Recipe is being cooked...</p>;
     }
 
     return (
