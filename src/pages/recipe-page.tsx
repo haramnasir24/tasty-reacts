@@ -56,7 +56,7 @@ export default function RecipePage() {
                         </div>
                         <div className="flex flex-col">
                             <p className="text-md lg:text-2xl">🍔 Cuisine</p>
-                            {recipe.cuisine === "Mediterranean" ? <p className="text-gray-800 text-md lg:text-lg font-bold ">
+                            {recipe.cuisine === "Mediterranean" ? <p className="text-gray-800 text-sm lg:text-lg font-bold ">
                                 {recipe.cuisine}
                             </p> : <p className="text-gray-800 text-md lg:text-2xl font-bold">
                                 {recipe.cuisine}
