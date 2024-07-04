@@ -45,8 +45,7 @@ Tasty Reacts is designed to provide a delightful user experience with fast load 
 
 ## Future Improvements:
 1. use React helmet for meta tags (SEO)
-2. deploy app on Vercel
-3. implement this app in a framework (NextJS) for performance
+2. implement this app in a framework (NextJS) for performance
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
