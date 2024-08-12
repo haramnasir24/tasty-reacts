@@ -1,5 +1,8 @@
 # Tasty Reacts
 
+The application has been deployed on Vercel, check it out here:
+https://tasty-reacts-4snv.vercel.app
+
 Welcome to Tasty Reacts, a modern web application built with Vite and React. This project showcases the use of cutting-edge tools and technologies to deliver a seamless and high-performance web experience. The application is a client-side SPA that presents a variety of recipes from different cuisines, making it easy for users to explore and find delicious dishes.
 
 # Table of Contents
